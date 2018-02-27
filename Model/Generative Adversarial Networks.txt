@@ -1,0 +1,85 @@
+Generative Adversarial Networks
+===============================
+
+
+"Can you look at a painting and recognize it as being the Mona Lisa? You probably can. That's discriminative modeling. 
+Can you paint the Mona Lisa yourself? You probably can't. That's generative modeling." 
+	- Ian Goodfellow, Inventor of GANs
+
+
+
+
+Abstract
+--------
+
+two multilayer perceptron models: 	- a generative model "G"
+			  						  (captures the data distribuation)
+									- a diskriminative model "D"
+			  						  (estimates the probability that a sample came from the training data rather than G)
+
+
+trained with backpropagation only!
+no need for markow chains
+no need for unrolles approximate interference networks during training or generating of samples
+
+
+
+1 Introduction
+--------------
+
+So far, discirminative models in deep learning had striking success!
+"... based on the backpropagation and dropout algorithms, using piecewise linear units
+[19, 9, 10] which have a particularly well-behaved gradient.""
+
+
+A ---> B, 
+A (high dimensional) gets mapped to B (low dimensional)
+discriminative models (D) reduce dimensionality, simplify, INFORM?. >
+
+generative models (G) increase dimensionality, enrich, create, EXFORM?. <
+
+D <----> G Opponents
+
+
+
+Generative models have quite less succes so far! Why?
+
+	- "difficulty in of leveryging the benefits of piecewise linear units in generative context"
+	- " difficulty of approximating many intractable probabilistic computations that arise in maximum likelihood estimation and related strategies"
+
+
+
+2 Related work
+--------------
+
+- Boltzmann machines und Deep Boltzmann machines
+- markov chain Monte Carlo methods
+- deep belief networks -> computational problems
+- noise-constrative estimation --> slow convergence because discriminator and generator are not separat
+- denoising auto-encoders und contractive autoendcoders
+- generative stochastic networks
+- stochastic backpropagation
+- auto-necoding variational Bayes
+
+
+"Because adversarial nets do not require feedback loops during generation, they are better able to leverage
+piecewise linear units [19, 9, 10], which improve the performance of backpropagation but have
+problems with unbounded activation when used ina feedback loop."
+
+
+3 Adversarial nets
+------------------
+
+- simplest/most straightforwars when D and G are multt-layer perceptrons
+
+... math ...
+
+"[Early in learning, rather] than training G to minimize log(1 − D(G(z))) we can train G to maximize log D(G(z))."
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+___________________________________ TO DO ______________________________________
+================================================================================
+1. preprocess data
+	- same size: 
+	  8x8 --> 16x16 --> 32x32 --> 64x64 --> 128x128 --> 256x256 Pixel
+	- all jpeg
+	- they should be easily plotably with numpyor pyplot
+	  #JUPYTER NOTEBOOK!
+
+
+
+
+
+
+
+
+________________________________________________________________________________
+================================================================================
+2. create the Generative Neural Network (DNN)
+	- hopefully using keras
+	
+
+	(train with MNIST first)
+
+
+
+
+
+================================================================================
+3. create the Discriminative Neural Network (CNN)
+	- hopefullly using keras
+
+
+
+
+ 
+================================================================================
+4. create the training funcion
+	- hopefullly using keras
+
+
+
+
+
+
+================================================================================
+
+...
+
+
+5. finish the GAN, train the networks for a very short period
+6. use AWS or Google etc. to train the GAN on TPUs or GPUs
+7. see results and improve the project if necessary
+8. finish the presentation of this coding exercise and post it online
