@@ -3,8 +3,7 @@
 
 
 ***"Can you look at a painting and recognize it as being the Mona Lisa? You probably can. That's discriminative modeling. 
-Can you paint the Mona Lisa yourself? You probably can't. That's generative modeling."***
-- Ian Goodfellow, Inventor of GANs
+Can you paint the Mona Lisa yourself? You probably can't. That's generative modeling."***,  Ian Goodfellow, Inventor of GANs
 
 
 ## Introduction
@@ -20,10 +19,19 @@ Download the project and create a virtual environment if necessary. Following de
 - `tensorflow`
 - `numpy`
 
+...
+
 
 
 ## Run
-...hot to run the program in terminal when setup
+Activate the environment and choose the project folder as the working directory.
+
+**Train:**
+Run `main.py --mode train` for training the model. You will see updates in the terminal while training and smaple pictures will be continually created in the working directory.
+The weights will be changed as *generator.txt* and *discriminator.txt*. 
+
+**Generate:**
+Run `main.py --mode generate --sample_size 4` for loading the weights into the model and directly generating images from the given dataset. This will create one image named *generated_image.jpg*. It is composited of different sample images. 
 
 ----
 
@@ -182,8 +190,8 @@ I am thinking a lot about growing multilayer perceptrons. I will explore this id
 
 It may be redundant, but if you want to see some inspiring variations of GANs newer papers and resources to dive deeper into the topic:
 
-+ [GAN in Tensorflow, GitHub] (https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/)
-+ [Generative Models, OpenAI] (https://blog.openai.com/generative-models/#contributions)
++ [GAN in Tensorflow, GitHub](https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/)
++ [Generative Models, OpenAI](https://blog.openai.com/generative-models/#contributions)
 + [Plug & Play Generative Networks, Anh Nguyen (ArXiv)](https://arxiv.org/pdf/1612.00005.pdf)
 + [Progressivly Growing GAN, NVIDIA (ArXiv)](https://arxiv.org/abs/1710.10196)
 + [Unsupervised Representation Learning with DCGANs, Alec Radford & Luke Metz (ArXiv)](https://arxiv.org/pdf/1511.06434.pdf)
