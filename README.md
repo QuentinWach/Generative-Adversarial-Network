@@ -1,5 +1,5 @@
 # Generative Adversarial Nets (GANs) - Generating Images from Custom Datasets
-[![](https://img.shields.io/badge/Original Paper [1]-Generative Adversarial Neural Nets-B.svg)](https://arxiv.org/pdf/1406.2661.pdf) 
+**[Original Paper [1]](https://arxiv.org/pdf/1406.2661.pdf)**
 
 
 ***"Can you look at a painting and recognize it as being the Mona Lisa? You probably can. That's discriminative modeling. 
@@ -12,9 +12,7 @@ With this project it is possible not only to generate numbers when trained on th
 
 ![GAN, stages of progress, MNIST](docs/progress-in-GA2.jpg)
 
-but also to use any custom set of images. A dataset of faces or even pokemon sprites can be used to generate new Pokomon or portraits. For example, after testing the model on MNIST, I used images of forrests and retrained the net to create new sceneries:
-
-![GAN, More Generated Examples](docs/progress-in-GA.jpg)
+but also to use any custom set of images. A dataset of faces or even pokemon sprites can be used to generate new Pokomon or portraits. For example, after testing the model on MNIST, I used images of forrests and retrained the net to create new sceneries.
 
 ## Setup
 Download the project and create a virtual environment if necessary. Following depencies need to be installed:
@@ -27,33 +25,7 @@ Download the project and create a virtual environment if necessary. Following de
 ## Run
 ...hot to run the program in terminal when setup
 
-
-## Project Structure
-...Explenation of the project structure and each element in it
-
-```
-.
-├── README.md
-├── data
-│   ├── README.md
-│   ├── prep.ipynb
-│   ├── raw_picture_downloads
-│   │   ├── 0fd22ede239b6f5d237bda18c0a0fa7b.jpg
-│   │   ├── 1824d3a3bfdea5d9539cef121c27df81.jpg
-│   │   ├── 1e42aa59d36a3a99ab90637b43fff5b6.jpg
-│   │   ├── 2099068b88ced4cc39c073f1513ac857.jpg
-│   │   .	               ... 
-│   └── scaled_pictures
-│       ├── img1.jpg
-│       ├── img2.jpg
-│       ├── img3.jpg
-│       ├── img4.jpg
-│       .     ...
-│   
-├── docs
-│   └── MNIST-test.gif
-└── main.py
-```
+----
 
 **Notes:**
 
@@ -172,24 +144,11 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 GAN().train(epochs=13, batch_size=5, k=1, save_interval=5)
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-3-3bf47ebc5d5b> in <module>()
-    ----> 1 dcgan = DCGAN()
-          2 dcgan.train(epochs=13, batch_size=5, save_interval=5)
-
-
-    NameError: name 'DCGAN' is not defined
-
-
 I did so fortwo hours on my CPU with the MNIST dataset. With
 
 
 ```python
-#GAN().generate(sample_size=100)
+GAN().generate(sample_size=100)
 ```
 
 new images based on the dataset are generated! It works! !
@@ -200,7 +159,7 @@ new images based on the dataset are generated! It works! !
 
 
 ## Notes
-(Problems, Ideas, References, Context, How I got the example pictures (not included in the GitHub portfolio))
+
 
 I ran it out of curiosity for two hours on a CPU. Don't do that unless you like wasting your time.
 
