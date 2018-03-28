@@ -131,8 +131,8 @@ def train(BATCH_SIZE, EPOCHS):
 		# show and save loss and accuracy
 
 		# select the image array of the complete array of generated images 
-		pic = (np.vsplit(fake_batch, BATCH_SIZE))[0] 	# select one image
-														# of the set of gen. images
+		pic = (np.vsplit(fake_batch, BATCH_SIZE))[0] 	
+														
 		# reformat image array
 		pic = pic*255
 		pic = np.squeeze(pic, axis=0)
