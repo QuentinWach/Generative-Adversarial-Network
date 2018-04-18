@@ -38,8 +38,8 @@ D_dropout = 0.5						# drop probability of multiplicative
 """
 G_optimizer = SGD()
 D_optimizer = SGD()
-
 """
+
 # Generator (Adam)
 G_LR = 0.0003
 G_BETA_1 = 0.5
@@ -61,6 +61,7 @@ D_NEST = False
 
 D_optimizer = SGD(lr=D_LR, momentum=D_MOM, decay=D_DECAY, nesterov=D_NEST)
 """
+
 # Discriminator (Adam)
 D_LR = 0.0002
 D_BETA_1 = 0.999
