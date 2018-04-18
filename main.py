@@ -7,7 +7,6 @@ from keras.layers import Activation, Dropout, LeakyReLU, Conv2DTranspose
 from keras.layers import GaussianNoise, GaussianDropout
 from keras.preprocessing.image import ImageDataGenerator
 from keras.preprocessing.image import array_to_img, img_to_array, load_img
-import math
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import matplotlib.animation as animation
