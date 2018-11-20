@@ -1,4 +1,4 @@
-# Generative Adversarial Nets (GANs)
+# Generative Adversarial Net (GANs)
 **[Original Paper [1]](https://arxiv.org/pdf/1406.2661.pdf)**
 
 
